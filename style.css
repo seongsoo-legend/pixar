@@ -1,0 +1,196 @@
+/* Reset */
+body, ul, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1B1E22;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 1;
+}
+
+/* Layout */
+
+.l-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.l-row {
+    margin: 0 -10px;
+}
+
+.l-col {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.clearfix,
+.l-row::after,
+.l-wrapper::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+
+/* Module */
+.header{
+    background-color: #31373E;
+    width: auto;
+}
+
+.header-logo {
+    display: block;
+    padding: 20px 0;
+}
+
+.header-point {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 15px;
+}
+
+.header-menu {
+    overflow: hidden;
+    background-color: #23282D;
+}
+
+.header-menu .header-menu-deco {
+    background-color: #1B1E22;
+    color: white;
+}
+
+.header-menu li {
+    float: left;
+}
+
+.header-menu li a {
+    display: block;
+    padding: 15px;
+    color: #8A8690;
+}
+
+.header-menu li a:hover {
+    background-color: #272C32;
+}
+
+.contents {
+    padding: 30px 0;
+    background-color: #1B1E22;
+}
+
+.movie {
+    border-radius: 10px;
+    background: linear-gradient(to top, #111111, #8A8690);
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.movie-title {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 5px solid;
+}
+
+.movie h2 {
+    font-size: 1em;
+    margin: 0.7em;
+}
+
+.movie p {
+    font-size: 0.5em;
+    margin: 1em;
+    color: #8A8690;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.gray {
+    color: gray;
+}
+
+.orange {
+    color: orange;
+}
+
+.white {
+    color: white;
+}
+
+.purple {
+    color: purple;
+}
+
+.footer {
+    border-top: 1px solid #8A8690;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 0.5em;
+    color: #8A8690;
+}
+
+@media (max-width:800px) {
+    .l-col {
+        width: 33.3333%;
+    }
+    .header-point {
+        display: none;
+    }
+
+    .header-menu li {
+        width: 20%;
+    }
+
+    .header-menu li a {
+        font-size: 12px;
+    }
+
+    .header-logo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:600px) {
+    .l-col {
+        width: 50%;
+    }
+
+    .header-logo {
+        margin: 0 auto;
+    }
+}
+@media (max-width:450px) {
+    .l-col {
+        width: 100%;
+    }
+    .header-logo {
+        margin: 0 auto;
+    }
+}
